@@ -25,7 +25,8 @@ Partial Class Form1
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label32 = New System.Windows.Forms.Label()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.BrewingWaterslabel2 = New System.Windows.Forms.Label()
@@ -65,6 +66,7 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.VScrollBar3 = New System.Windows.Forms.VScrollBar()
         Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
+        Me.Label32 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.RadioButton8 = New System.Windows.Forms.RadioButton()
@@ -90,8 +92,8 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -118,6 +120,8 @@ Partial Class Form1
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.CheckBox3)
+        Me.Panel1.Controls.Add(Me.CheckBox4)
         Me.Panel1.Controls.Add(Me.CheckBox2)
         Me.Panel1.Controls.Add(Me.CheckBox1)
         Me.Panel1.Controls.Add(Me.Label28)
@@ -167,15 +171,25 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(1904, 578)
         Me.Panel1.TabIndex = 3
         '
-        'Label32
+        'CheckBox2
         '
-        Me.Label32.AutoSize = True
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(1681, 581)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(205, 25)
-        Me.Label32.TabIndex = 45
-        Me.Label32.Text = "Problem Description"
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(12, 389)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(151, 17)
+        Me.CheckBox2.TabIndex = 45
+        Me.CheckBox2.Text = "100 % Testing ($1.00/unit)"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(12, 357)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(151, 17)
+        Me.CheckBox1.TabIndex = 44
+        Me.CheckBox1.Text = "100 % Testing ($1.00/unit)"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Label28
         '
@@ -594,6 +608,16 @@ Partial Class Form1
         Me.VScrollBar1.Value = 60
         Me.VScrollBar1.Visible = False
         '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.Location = New System.Drawing.Point(1681, 581)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(205, 25)
+        Me.Label32.TabIndex = 45
+        Me.Label32.Text = "Problem Description"
+        '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
@@ -857,25 +881,25 @@ Partial Class Form1
         Me.Button1.Text = "Run Factory"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'CheckBox3
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(12, 357)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(151, 17)
-        Me.CheckBox1.TabIndex = 44
-        Me.CheckBox1.Text = "100 % Testing ($1.00/unit)"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(191, 389)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(151, 17)
+        Me.CheckBox3.TabIndex = 47
+        Me.CheckBox3.Text = "100 % Testing ($1.00/unit)"
+        Me.CheckBox3.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'CheckBox4
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(12, 389)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(151, 17)
-        Me.CheckBox2.TabIndex = 45
-        Me.CheckBox2.Text = "100 % Testing ($1.00/unit)"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(191, 357)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(151, 17)
+        Me.CheckBox4.TabIndex = 46
+        Me.CheckBox4.Text = "100 % Testing ($1.00/unit)"
+        Me.CheckBox4.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -978,4 +1002,6 @@ Partial Class Form1
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents CheckBox4 As CheckBox
 End Class
